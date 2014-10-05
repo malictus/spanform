@@ -1,0 +1,628 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Spanform.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Spanform.ico"
+IDR_SPANFOTYPE          ICON    DISCARDABLE     "res\\SpanformDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_TITLE               BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_CREATE
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_SPANFORM_SHOWFILEINFO
+    BUTTON      ID_SPANFORM_DISPLAY
+    BUTTON      ID_AUDIO_PLAY
+    BUTTON      ID_AUDIO_STOP
+    BUTTON      ID_AUDIO_RESTART
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Crea&te...",                  ID_FILE_CREATE
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Spanform"
+    BEGIN
+        MENUITEM "&About Spanform...",          ID_APP_ABOUT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+END
+
+IDR_SPANFOTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Crea&te...",                  ID_FILE_CREATE
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...",                   ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        , GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Spanform"
+    BEGIN
+        MENUITEM "Display...",                  ID_SPANFORM_DISPLAY
+        MENUITEM "&Show File Info...",          ID_SPANFORM_SHOWFILEINFO
+        MENUITEM "&About Spanform...",          ID_APP_ABOUT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Audio"
+    BEGIN
+        MENUITEM "&Play",                       ID_AUDIO_PLAY
+        MENUITEM "&Stop",                       ID_AUDIO_STOP
+        MENUITEM "&Associate",                  ID_AUDIO_ASSOCIATE
+        MENUITEM "&Restart",                    ID_AUDIO_RESTART
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 115, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Spanform"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,7,7,101,49
+    DEFPUSHBUTTON   "OK",IDOK,35,81,50,14,WS_GROUP
+    LTEXT           "Version 1.01",IDC_STATIC,37,57,43,10
+    LTEXT           "Copyright 2000",IDC_STATIC,34,69,52,11
+END
+
+IDD_ANAL DIALOG DISCARDABLE  0, 0, 223, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analysis Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,125,50,14
+    GROUPBOX        "Window",IDC_STATIC,7,7,63,34
+    CONTROL         "Rectangular",IDC_Rectangular,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,9,15,55,10
+    CONTROL         "Hamming",IDC_Hamming,"Button",BS_AUTORADIOBUTTON,9,25,
+                    45,10
+    GROUPBOX        "Slide",IDC_STATIC,170,7,42,111
+    CONTROL         "50",IDC_slide50,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    177,15,24,10
+    CONTROL         "1600",IDC_slide700,"Button",BS_AUTORADIOBUTTON,177,103,
+                    32,10
+    CONTROL         "200",IDC_slide200,"Button",BS_AUTORADIOBUTTON,177,48,28,
+                    10
+    CONTROL         "500",IDC_slide400,"Button",BS_AUTORADIOBUTTON,177,70,28,
+                    10
+    CONTROL         "700",IDC_slide500,"Button",BS_AUTORADIOBUTTON,177,81,28,
+                    10
+    CONTROL         "1000",IDC_slide600,"Button",BS_AUTORADIOBUTTON,177,93,
+                    32,10
+    CONTROL         "300",IDC_slide300,"Button",BS_AUTORADIOBUTTON,177,59,28,
+                    10
+    CONTROL         "150",IDC_slide150,"Button",BS_AUTORADIOBUTTON,177,37,28,
+                    10
+    CONTROL         "100",IDC_slide100,"Button",BS_AUTORADIOBUTTON,177,26,28,
+                    10
+    GROUPBOX        "High Freq Cutoff",IDC_STATIC,82,7,85,78
+    CONTROL         "12000",IDC_12000Cut,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,90,19,36,10
+    CONTROL         "9000",IDC_9000cut,"Button",BS_AUTORADIOBUTTON,90,35,32,
+                    10
+    CONTROL         "6000",IDC_6000cut,"Button",BS_AUTORADIOBUTTON,90,51,32,
+                    10
+    CONTROL         "None (20000Hz)",IDC_nocut,"Button",BS_AUTORADIOBUTTON,
+                    90,67,68,10
+    GROUPBOX        "Frame Size",IDC_STATIC,7,46,70,77
+    CONTROL         "128",IDC_size128,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    16,57,28,10
+    CONTROL         "256",IDC_size256,"Button",BS_AUTORADIOBUTTON,16,66,28,
+                    10
+    CONTROL         "512",IDC_size512,"Button",BS_AUTORADIOBUTTON,16,76,28,
+                    10
+    CONTROL         "1024",IDC_size1024,"Button",BS_AUTORADIOBUTTON,16,86,32,
+                    10
+    CONTROL         "2048",IDC_size2048,"Button",BS_AUTORADIOBUTTON,15,96,32,
+                    10
+    CONTROL         "4096",IDC_size4096,"Button",BS_AUTORADIOBUTTON,16,106,
+                    32,10
+END
+
+IDD_PROG DIALOG DISCARDABLE  20, 20, 179, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Analysis In Progress..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,7,165,17
+    PUSHBUTTON      "Stop Analysis - Keep",IDC_Keep,7,52,83,17
+    PUSHBUTTON      "Stop Analysis - Cancel",IDC_AnalysisCancel,90,52,82,17
+    LTEXT           "Sample Units Left:",IDC_STATIC,7,28,58,8
+    LTEXT           "unitsanalyzed",IDC_unitsanalyzed,87,40,44,8
+    LTEXT           "unitsleft",IDC_unitleft,87,28,45,8
+    LTEXT           "Sample Units Analyzed:",IDC_STATIC,7,40,75,8
+END
+
+IDD_INFO DIALOG DISCARDABLE  0, 0, 180, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,87,50,14
+    GROUPBOX        "WAV File Info",IDC_STATIC,7,7,166,73
+    LTEXT           "Name:",IDC_STATIC,14,18,22,8
+    LTEXT           "Sampling Rate:",IDC_STATIC,14,30,49,8
+    LTEXT           "Bits:",IDC_STATIC,15,42,14,8
+    LTEXT           "Length:",IDC_STATIC,15,54,25,8
+    LTEXT           "Channels:",IDC_STATIC,15,65,32,8
+    LTEXT           "infoname",IDC_infoname,41,18,105,8
+    LTEXT           "samprate",IDC_infosamprate,68,30,76,8
+    LTEXT           "infobits",IDC_infobits,31,42,28,8
+    LTEXT           "infolength",IDC_infolength,43,54,81,8
+    LTEXT           "infochannels",IDC_infochannels,52,65,44,8
+    LTEXT           "Units of Sample Data:",IDC_STATIC,13,119,70,8
+    LTEXT           "Number of Analysis Frames:",IDC_STATIC,13,128,88,8
+    LTEXT           "Size of Frame:",IDC_STATIC,13,138,46,8
+    LTEXT           "Power of 2 For Analysis:",IDC_STATIC,13,148,76,8
+    LTEXT           "Slide:",IDC_STATIC,13,159,18,8
+    GROUPBOX        "Analysis Info",IDC_STATIC,7,107,166,90
+    LTEXT           "Window:",IDC_STATIC,13,170,29,8
+    LTEXT           "Frequency Cutoff:",IDC_STATIC,13,180,57,8
+    LTEXT           "infosampunits",IDC_infosampunits,87,119,80,9
+    LTEXT           "infoanalframes",IDC_infoanalframes,104,128,63,9
+    LTEXT           "infoframesize",IDC_infoframesize,61,138,105,8
+    LTEXT           "infopower2",IDC_infopower2,92,148,77,8
+    LTEXT           "infoslide",IDC_infoslide,33,159,134,8
+    LTEXT           "infowindow",IDC_infowindow,45,170,121,8
+    LTEXT           "infocutoff",IDC_infocutoff,73,180,95,8
+END
+
+IDD_DISPLAY DIALOG DISCARDABLE  0, 0, 183, 252
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,126,23,50,14
+    GROUPBOX        "Pitch Display",IDC_STATIC,7,7,98,35
+    CONTROL         "Exponential",IDC_Expo,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,17,53,10
+    CONTROL         "Linear",IDC_Linear,"Button",BS_AUTORADIOBUTTON,13,28,35,
+                    10
+    CONTROL         "Hz",IDC_Hz,"Button",BS_AUTORADIOBUTTON | WS_GROUP,68,18,
+                    25,10
+    CONTROL         "Letters",IDC_Letters,"Button",BS_AUTORADIOBUTTON,68,29,
+                    37,10
+    GROUPBOX        "",IDC_STATIC,7,42,97,17
+    CONTROL         "Color",IDC_COLOR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    13,48,43,10
+    CONTROL         "B/W",IDC_BW,"Button",BS_AUTORADIOBUTTON,61,47,31,10
+    CONTROL         "Slider2",IDC_hor,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,7,73,132,27
+    CONTROL         "Slider3",IDC_vert,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,7,113,131,25
+    CONTROL         "Slider4",IDC_Sensitive,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,7,156,131,25
+    CONTROL         "Slider4",IDC_noize,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,7,201,132,25
+    LTEXT           "Horizontal Size",IDC_STATIC,43,65,61,11
+    LTEXT           "Vertical Size",IDC_STATIC,48,105,42,9
+    LTEXT           "Sensitivity",IDC_STATIC,52,147,32,8
+    LTEXT           "Noise Threshold",IDC_STATIC,45,193,52,8
+    LTEXT           "None",IDC_STATIC,7,228,18,8
+    LTEXT           "High",IDC_STATIC,122,228,16,8
+    LTEXT           "Low",IDC_STATIC,7,182,14,8
+    LTEXT           "High",IDC_STATIC,121,183,16,8
+    LTEXT           "Small",IDC_STATIC,7,137,18,8
+    LTEXT           "Large",IDC_STATIC,119,138,19,8
+    LTEXT           "Small",IDC_STATIC,7,99,18,8
+    LTEXT           "Large",IDC_STATIC,121,99,19,8
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,126,41,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Version 1.01\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Spanform\0"
+            VALUE "FileVersion", "1, 0, 1, 0\0"
+            VALUE "InternalName", "Spanform\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000 by James Halliday\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Spanform.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Spanform\0"
+            VALUE "ProductVersion", "1, 0, 1, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_ANAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PROG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Spanform"
+    IDR_SPANFOTYPE          "\nSpanfo\nSpanform\nSpanform Files (*.zed)\n.zed\nSpanform.Document\nSpanform Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Spanform"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing analysis file\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active analysis file\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active analysis file\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CREATE          "Create a new analysis file\nCreate"
+    ID_SPANFORM_SHOWFILEINFO 
+                            "Show information about the current analysis file\nShow Info"
+    ID_SPANFORM_SENSITIVITY "Adjust the sensitivity setting of the file\nSensitivity"
+    ID_SPANFORM_NOISETHRESHOLD 
+                            "Adjust the noise threshold of the file\nNoise Threshold"
+    ID_SPANFORM_ADJUSTSIZE_BIGGER 
+                            "Increase the vertical component of the file\nIncrease Vertical"
+    ID_SPANFORM_ADJUSTSIZE_SMALLER 
+                            "Decrease the vertical component of the file\nDecrease Vertical"
+    ID_SPANFORM_ADJUSTSIZE_ORIGINALSIZE 
+                            "Restore the image to its original size\nOriginal Size"
+    ID_SPANFORM_ADJUSTSIZE_INCREASEHORIZONTAL 
+                            "Increase the horizontal component of the file\nIncrease Horizontal"
+    ID_SPANFORM_ADJUSTSIZE_DECREASEHORIZONTAL 
+                            "Decrease the horizontal component of the file\nDecrease Horizontal"
+    ID_SPANFORM_DISPLAY_COLOR "Set the display to colors\nColor"
+    ID_SPANFORM_DISPLAY_GRAYS "Set the display to shades of gray\nGrays"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SPANFORM_DISPLAY     "Alter the display characteristics of the analysis file\nDisplay"
+    ID_AUDIO_PLAY           "Play"
+    ID_AUDIO_STOP           "Stop"
+    ID_AUDIO_ASSOCIATE      "Reassociate the analysis file with a WAV file\nAssociate"
+    ID_AUDIO_RESTART        "Restart Audio at the Beginning of the File\nRestart"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Spanform.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

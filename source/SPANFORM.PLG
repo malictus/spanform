@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Spanform - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Spanform.res" /d "_DEBUG" "C:\WINNT\Profiles\jhallida\Desktop\Spanform Stuff\SPAN\Spanform.rc"" 
+Creating temporary file "C:\TEMP\RSP23.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Spanform.pdb" /debug /machine:I386 /out:"Debug/Spanform.exe" /pdbtype:sept 
+".\Debug\canaldialog.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\cinfo.obj"
+".\Debug\Display.obj"
+".\Debug\dobj.obj"
+".\Debug\MainFrm.obj"
+".\Debug\progdlg.obj"
+".\Debug\Spanform.obj"
+".\Debug\SpanformDoc.obj"
+".\Debug\SpanformView.obj"
+".\Debug\Splash.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Spanform.res"
+".\WINMM.LIB"
+]
+Creating command line "link.exe @C:\TEMP\RSP23.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Spanform.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
